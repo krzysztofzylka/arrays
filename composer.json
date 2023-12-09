@@ -1,0 +1,22 @@
+{
+    "name": "krzysztofzylka/arrays",
+    "description": "Array library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Krzysztofzylka\\Arrays\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Krzysztof Żyłka",
+            "email": "krzysztofzylka@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "krzysztofzylka/strings": "^1.0.0"
+    }
+}
