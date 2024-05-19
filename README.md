@@ -32,3 +32,7 @@ composer require krzysztofzylka/arrays
 ```php
 \Krzysztofzylka\Arrays\Arrays::reduction($array)
 ```
+## Get nested value
+```php
+\Krzysztofzylka\Arrays\Arrays::getNestedValue($array, $keys)
+```

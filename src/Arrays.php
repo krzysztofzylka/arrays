@@ -133,4 +133,22 @@ class Arrays
         return $array;
     }
 
+    /**
+     * Get nested value
+     * @param $array
+     * @param $keys
+     * @return mixed|null
+     */
+    public static function getNestedValue($array, $keys)
+    {
+        foreach ($keys as $key) {
+            if (isset($array[$key])) {
+                $array = $array[$key];
+            } else {
+                return null;
+            }
+        }
+        return $array;
+    }
+
 }
