@@ -151,4 +151,23 @@ class Arrays
         return $array;
     }
 
+    /**
+     * Set nested value
+     * @param array $array
+     * @param array $keys
+     * @param mixed $value
+     * @return void
+     */
+    public static function setNestedValue(array &$array, array $keys, mixed $value): void
+    {
+        foreach ($keys as $k) {
+            if (!isset($array[$k])) {
+                $array[$k] = [];
+            }
+            $array = &$array[$k];
+        }
+
+        $array = $value;
+    }
+
 }
